@@ -1,0 +1,18 @@
+.SmallIcon {
+  -fx-font-size: 16;
+}
+.MediumIcon {
+  -fx-font-size: 20;
+}
+.LargeIcon {
+  -fx-font-size: 40;
+}
+.LargereIcon {
+  -fx-font-size: 50;
+}
+.ActiveIcon {
+  -fx-fill: #7a7;
+}
+.ButtonIcon {
+  -fx-fill: #fff;
+}

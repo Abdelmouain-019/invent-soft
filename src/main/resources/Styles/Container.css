@@ -1,0 +1,54 @@
+VBox,
+HBox,
+AnchorPane {
+  -fx-background-color: #efe;
+}
+.NoneBackground {
+  -fx-background-color: transparent;
+}
+.DarckerBackground {
+  -fx-background-color: #ada;
+}
+.RoundedContainer {
+  -fx-background-radius: 10;
+}
+.SmallRoundedContainer {
+  -fx-background-radius: 5;
+}
+.ContainerCenterV {
+  -fx-alignment: TOP_CENTER;
+}
+.ContainerCenterH {
+  -fx-alignment: CENTER_LEFT;
+}
+.ContainerCenter {
+  -fx-alignment: CENTER;
+}
+.SideMenu {
+  -fx-padding: 50 17 17 17;
+  -fx-background-color: #dfd;
+}
+.SmallPaddingH {
+  -fx-padding: 5 10;
+}
+.SmallerPadding {
+  -fx-padding: 3;
+}
+.SmallPadding {
+  -fx-padding: 10;
+}
+.Padding {
+  -fx-padding: 15;
+}
+.LargePadding {
+  -fx-padding: 20;
+}
+.SmallSpacing {
+  -fx-spacing: 5;
+}
+.Spacing {
+  -fx-spacing: 15;
+}
+.LargeSpacing {
+  -fx-spacing: 20;
+}

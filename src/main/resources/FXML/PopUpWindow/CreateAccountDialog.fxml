@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="Padding" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controllers.CreateAccountDialogController">
+   <children>
+      <CubicCurve controlX1="377.5" controlX2="309.5" controlY1="385.0" controlY2="-71.0257568359375" endX="-36.0" endY="153.0" fill="#e9ffc5" startX="525.5" startY="411.9742431640625" stroke="TRANSPARENT" strokeWidth="0.0" />
+      <QuadCurve controlX="-354.72332763671875" controlY="512.6708984375" endY="153.0" fill="#e4fac1" startX="526.0" startY="412.4742431640625" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#e9ffc5" layoutX="663.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0" />
+      <Circle fill="#e4fac1" layoutX="512.0" layoutY="108.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="95.0" />
+      <Circle fill="#e4fac1" layoutX="492.0" layoutY="50.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="9.0" />
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="NoneBackground" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Acount">
+               <styleClass>
+                  <String fx:value="Title" />
+                  <String fx:value="LargeText" />
+               </styleClass></Text>
+            <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox styleClass="NoneBackground">
+                     <children>
+                        <Label text="First Name">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="first_name_field" promptText="Enter First Name" />
+                     </children>
+                  </VBox>
+                  <VBox styleClass="NoneBackground">
+                     <children>
+                        <Label text="Last Name">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="last_name_field" promptText="Enter Last Name" />
+                     </children>
+                  </VBox>
+                  <VBox styleClass="NoneBackground">
+                     <children>
+                        <Label text="User Name">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ID_CARD" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="user_name_field" promptText="Enter User Name" />
+                     </children>
+                  </VBox>
+                  <VBox styleClass="NoneBackground">
+                     <children>
+                        <Label text="password">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="KEY" />
+                           </graphic>
+                        </Label>
+                        <PasswordField fx:id="password_field" promptText="Enter Password (You Can Let it empty and it will set to &quot;password&quot;)" />
+                     </children>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="NoneBackground" />
+                  <String fx:value="Spacing" />
+                  <String fx:value="Padding" />
+               </styleClass>
+            </VBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label fx:id="error_text" maxWidth="1.7976931348623157E308" text="Error:" textFill="RED" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="add_btn" mnemonicParsing="false" text="Add">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                     </graphic>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="ContainerCenterH" />
+                  <String fx:value="NoneBackground" />
+               </styleClass>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../Styles/Text.css" />
+      <URL value="@../../Styles/Container.css" />
+      <URL value="@../../Styles/Buttons.css" />
+      <URL value="@../../Styles/Icon.css" />
+      <URL value="@../../Styles/TextField.css" />
+   </stylesheets>
+</AnchorPane>

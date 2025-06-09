@@ -1,0 +1,35 @@
+CREATE TABLE IF NOT EXISTS Product(
+    id VARCHAR(13) PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    buing_price REAL NOT NULL,
+    selling_price REAL NOT NULL,
+    cat_id INTEGER DEFAULT NULL,
+    quantity INT NOT NULL,
+    image_data BLOB DEFAULT NULL,
+    FOREIGN KEY (cat_id) REFERENCES Category(cat_id)
+);
+CREATE TABLE IF NOT EXISTS User(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    user_name VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Category(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    critical_quantity INTEGER NOT NULL,
+    name VARCHAR(50) NOT NULL UNIQUE
+);
+CREATE TABLE IF NOT EXISTS History(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    occur_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    action INT NOT NULL CHECK(action IN (0,1)),
+    user_id INTEGER NOT NULL,
+    product_id VARCHAR(13) NOT NULL,
+    quantity INTEGER NOT NULL,
+    price REAL NOT NULL,
+    FOREIGN KEY(product_id) REFERENCES Product(id) ON DELETE CASCADE,
+    FOREIGN KEY(user_id) REFERENCES User(id)
+);
+
+

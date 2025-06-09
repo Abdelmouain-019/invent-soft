@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="200.0" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controllers.ProfileController">
+   <children>
+      <VBox maxWidth="300.0" minHeight="500.0" minWidth="400.0">
+         <children>
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" style="-fx-font-size: 50;">
+                     <styleClass>
+                        <String fx:value="LargeIcon" />
+                        <String fx:value="ActiveIcon" />
+                     </styleClass>
+                  </FontAwesomeIconView>
+                  <VBox>
+                     <children>
+                        <Text fx:id="username" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                           <styleClass>
+                              <String fx:value="MediumText" />
+                              <String fx:value="Title" />
+                           </styleClass>
+                        </Text>
+                        <Text fx:id="full_name" layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Firstname Lastname" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="ContainerCenterH" />
+                        <String fx:value="SmallPadding" />
+                        <String fx:value="DarckerBackground" />
+                     </styleClass>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="ContainerCenter" />
+                  <String fx:value="Padding" />
+                  <String fx:value="DarckerBackground" />
+               </styleClass>
+            </HBox>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="changeName" mnemonicParsing="false" styleClass="LargeButton" text="Change Username">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ADDRESS_CARD" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="changePassword" mnemonicParsing="false" styleClass="LargeButton" text="Change Password">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="KEY" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="changeFirstname" layoutX="70.0" layoutY="47.0" mnemonicParsing="false" styleClass="LargeButton" text="Change First Name">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="changeLastname" layoutX="70.0" layoutY="84.0" mnemonicParsing="false" styleClass="LargeButton" text="Change Last Name">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" />
+                     </graphic>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="ButtonContainer" />
+                  <String fx:value="SmallSpacing" />
+                  <String fx:value="ContainerCenterV" />
+                  <String fx:value="DarckerBackground" />
+               </styleClass>
+            </VBox>
+            <Button fx:id="logout" mnemonicParsing="false" text="Log Out">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="LargeButton" />
+                  <String fx:value="Logout" />
+               </styleClass>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="ContainerCenterV" />
+            <String fx:value="DarckerBackground" />
+            <String fx:value="Padding" />
+            <String fx:value="RoundedContainer" />
+         </styleClass>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../Styles/Buttons.css" />
+      <URL value="@../Styles/Text.css" />
+      <URL value="@../Styles/Icon.css" />
+      <URL value="@../Styles/Container.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="ContainerCenter" />
+      <String fx:value="Padding" />
+   </styleClass>
+</VBox>

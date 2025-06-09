@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controllers.AccountsController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts">
+         <styleClass>
+            <String fx:value="Title" />
+            <String fx:value="LargeText" />
+         </styleClass>
+      </Text>
+      <HBox alignment="TOP_RIGHT" styleClass="SmallSpacing">
+         <children>
+            <Button fx:id="excel_btn" mnemonicParsing="false" styleClass="SmallerPadding" text="Export to Excel" />
+            <Button fx:id="pdf_btn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Export to PDF">
+               <styleClass>
+                  <String fx:value="SmallerPadding" />
+                  <String fx:value="Logout" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="200.0" minWidth="480.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox maxWidth="1.7976931348623157E308" prefHeight="50.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="User Name" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="WhiteText" />
+                        <String fx:value="SmallText" />
+                     </styleClass>
+                  </Label>
+                  <ComboBox fx:id="oreder_combo" prefWidth="110.0" promptText="Oredered By" />
+               </children>
+               <styleClass>
+                  <String fx:value="DarckerBackground" />
+                  <String fx:value="ContainerCenterH" />
+                  <String fx:value="SmallPaddingH" />
+                  <String fx:value="SmallSpacing" />
+               </styleClass>
+            </HBox>
+            <ListView fx:id="accounts_list" fixedCellSize="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="add_btn" mnemonicParsing="false" text="Add User">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../Styles/Text.css" />
+      <URL value="@../Styles/Shapes.css" />
+      <URL value="@../Styles/Icon.css" />
+      <URL value="@../Styles/Container.css" />
+      <URL value="@../Styles/Buttons.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="LargePadding" />
+      <String fx:value="Spacing" />
+   </styleClass>
+</VBox>

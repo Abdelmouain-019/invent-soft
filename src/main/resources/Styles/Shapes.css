@@ -1,0 +1,5 @@
+.line {
+  -fx-stroke: #7b7;
+  -fx-stroke-width: 5;
+  -fx-padding: 5;
+}

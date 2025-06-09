@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+
+<HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@../Styles/Container.css" />
+      <URL value="@../Styles/Buttons.css" />
+      <URL value="@../Styles/Text.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="ContainerCenterH" />
+      <String fx:value="SmallPaddingH" />
+      <String fx:value="NoneBackground" />
+      <String fx:value="SmallSpacing" />
+   </styleClass>
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="image" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@../../../../images/placeholder.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="red_dot" fill="#ff1f1f" radius="4.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-4.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="name" maxWidth="1.7976931348623157E308" styleClass="BoldText" text="P.Name" HBox.hgrow="ALWAYS" />
+      <Label fx:id="buing_price" prefWidth="80.0" text="00.00" textFill="RED">
+         <styleClass>
+            <String fx:value="TextCenter" />
+            <String fx:value="BolderText" />
+         </styleClass>
+      </Label>
+      <Label fx:id="selling_price" prefWidth="80.0" text="00.00" textFill="#6fff00">
+         <styleClass>
+            <String fx:value="TextCenter" />
+            <String fx:value="BolderText" />
+         </styleClass>
+      </Label>
+      <Label fx:id="quantity_label" prefWidth="50.0" style="-fx-alignment: CENTER;" text="00">
+         <styleClass>
+            <String fx:value="TextCenter" />
+            <String fx:value="BolderText" />
+         </styleClass>
+      </Label>
+      <Label fx:id="category_label" prefWidth="110.0" text="Category">
+         <styleClass>
+            <String fx:value="DarckerBackground" />
+            <String fx:value="RoundedContainer" />
+            <String fx:value="SmallerPadding" />
+            <String fx:value="WhiteText" />
+            <String fx:value="BoldText" />
+            <String fx:value="ContainerCenter" />
+         </styleClass>
+      </Label>
+      <Button fx:id="buy_btn" mnemonicParsing="false" text="Buy" />
+      <Button fx:id="sell_btn" mnemonicParsing="false" styleClass="Logout" text="Sell" />
+   </children>
+</HBox>

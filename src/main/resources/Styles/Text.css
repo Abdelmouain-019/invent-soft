@@ -1,0 +1,31 @@
+Text {
+  -fx-font-weight: bolder;
+}
+.SmallerText {
+  -fx-font-size: 12;
+}
+.SmallText {
+  -fx-font-size: 18;
+}
+.MediumText {
+  -fx-font-size: 32;
+}
+.LargeText {
+  -fx-font-size: 40;
+}
+.Title {
+  -fx-fill: #7a7;
+  -fx-text-fill: #7a7;
+}
+.WhiteText {
+  -fx-text-fill: #fff;
+}
+.TextCenter {
+  -fx-alignment: CENTER;
+}
+.BoldText {
+  -fx-font-weight: bold;
+}
+.BolderText {
+  -fx-font-weight: bolder;
+}

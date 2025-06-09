@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@../Styles/Container.css" />
+      <URL value="@../Styles/Buttons.css" />
+      <URL value="@../Styles/Text.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="ContainerCenterH" />
+      <String fx:value="SmallPaddingH" />
+      <String fx:value="NoneBackground" />
+      <String fx:value="SmallSpacing" />
+   </styleClass>
+   <children>
+      <HBox>
+         <children>
+            <VBox fx:id="buy" alignment="CENTER" minHeight="40.0" minWidth="40.0" style="-fx-background-radius: 100;" styleClass="Logout">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOWNLOAD" size="25" />
+               </children>
+            </VBox>
+            <VBox fx:id="sell" alignment="CENTER" minHeight="40.0" minWidth="40.0" style="-fx-background-radius: 100;" styleClass="DarckerBackground">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" size="25" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox styleClass="NoneBackground" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="user_label" alignment="BOTTOM_LEFT" maxWidth="-Infinity" prefWidth="100.0" text="User">
+               <styleClass>
+                  <String fx:value="SmallText" />
+                  <String fx:value="BoldText" />
+               </styleClass>
+            </Label>
+            <Label fx:id="date_label" maxWidth="1.7976931348623157E308" styleClass="SmallerText" text="Date" />
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <Label fx:id="product_label" alignment="CENTER" maxWidth="120.0" text="Product" HBox.hgrow="ALWAYS">
+         <styleClass>
+            <String fx:value="Title" />
+            <String fx:value="SmallText" />
+            <String fx:value="BoldText" />
+         </styleClass></Label>
+      <Label fx:id="amount_label" alignment="CENTER" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="BoldText" text="Amount" HBox.hgrow="ALWAYS" />
+      <Label fx:id="price_label" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="BolderText" text="Price" HBox.hgrow="NEVER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</HBox>

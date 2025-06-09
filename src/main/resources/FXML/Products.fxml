@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controllers.ProductsController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Products">
+         <styleClass>
+            <String fx:value="Title" />
+            <String fx:value="LargeText" />
+         </styleClass>
+      </Text>
+      <HBox alignment="CENTER_RIGHT" styleClass="Spacing" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="excel_btn" mnemonicParsing="false" styleClass="SmallerPadding" text="Extract to Excel" />
+            <Button fx:id="pdf_btn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Extract to PDF">
+               <styleClass>
+                  <String fx:value="Logout" />
+                  <String fx:value="SmallerPadding" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+               <children>
+                  <TextField fx:id="serach_field" prefWidth="170.0" promptText="Search Bar" />
+                  <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                  <Label text="Category : " />
+                  <ComboBox fx:id="category_combobox" prefWidth="120.0" promptText="Category">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></ComboBox>
+                  <Label layoutX="397.0" layoutY="14.0" text="Ordered By : " />
+                  <ComboBox fx:id="oreder_combo" layoutX="430.0" layoutY="10.0" prefWidth="120.0" promptText="Ordered By" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="30.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Label" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="SmallText" />
+                        <String fx:value="WhiteText" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="DarckerBackground" />
+                  <String fx:value="SmallerPadding" />
+               </styleClass>
+            </HBox>
+            <ListView fx:id="products_listview" fixedCellSize="70.0" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="add_btn" mnemonicParsing="false" text="Add">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../Styles/Container.css" />
+      <URL value="@../Styles/Buttons.css" />
+      <URL value="@../Styles/Icon.css" />
+      <URL value="@../Styles/Text.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="Padding" />
+      <String fx:value="Spacing" />
+   </styleClass>
+</VBox>

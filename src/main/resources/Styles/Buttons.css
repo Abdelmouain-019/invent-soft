@@ -1,0 +1,30 @@
+Button {
+  -fx-transition: all 0.3s ease-in-out;
+  -fx-text-fill: #fff;
+  -fx-alignment: CENTER_LEFT;
+  -fx-background-color: #beb;
+  -fx-font-weight: bold;
+  -fx-font-size: 16;
+}
+Button FontAwesomeIconView {
+  -fx-fill: #fff;
+}
+Button:hover {
+  -fx-background-color: #afc;
+}
+
+.SmallButton {
+  -fx-pref-width: 100;
+}
+.MediumButton {
+  -fx-pref-width: 175;
+}
+.LargeButton {
+  -fx-pref-width: 250;
+}
+.Logout {
+  -fx-background-color: #f50;
+}
+.Logout:hover {
+  -fx-background-color: #f75;
+}

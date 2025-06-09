@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="800.0" prefWidth="1280.0" styleClass="Padding" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controllers.DashboardController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <styleClass>
+            <String fx:value="LargeText" />
+            <String fx:value="Title" />
+         </styleClass>
+      </Text>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="LargeSpacing" VBox.vgrow="ALWAYS">
+         <children>
+            <BarChart fx:id="barchart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="159.0" prefWidth="598.0" title="Highest Selling Products" HBox.hgrow="ALWAYS">
+               <xAxis>
+                  <CategoryAxis label="Products" side="BOTTOM" fx:id="x" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="y" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <PieChart fx:id="piechart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" title="Income Source" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Text layoutX="25.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products Need to be restoked">
+         <styleClass>
+            <String fx:value="MediumText" />
+            <String fx:value="Title" />
+         </styleClass>
+      </Text>
+      <ListView fx:id="mylist" fixedCellSize="70.0" maxHeight="1.7976931348623157E308" prefHeight="300.0" VBox.vgrow="NEVER" />
+   </children>
+   <stylesheets>
+      <URL value="@../Styles/Text.css" />
+      <URL value="@../Styles/Container.css" />
+      <URL value="@../Styles/Buttons.css" />
+   </stylesheets>
+</VBox>
